@@ -26,8 +26,7 @@ This project automatically discovers major cities in selected European countries
    python "EUROPEAN ROUTE AUTOMATION SYSTEM.py"
    ```
 2. You can customize the countries and number of routes by editing the parameters in the script (see the `if __name__ == "__main__":` section).
-
-3. When you run the script, all outputs (maps, timetables, reports) will be generated locally in an `outputs/` directory .
+3. When you run the script, all outputs (maps, timetables, reports) will be generated locally in an `outputs/` directory (which is not included in the repository).
 
 ## Project Structure
 ```
@@ -38,18 +37,29 @@ EUROPEAN ROUTE AUTOMATION SYSTEM/
 ├── .gitignore
 ```
 
-## Outputs
-├── maps/
+## Outputs Directory Structure
+When you run the script, the following structure will be created in the `outputs/` directory:
+
+```
+outputs/
+├── maps/           
 │   ├── EUR_001_route_map.html
-│   ├── EUR_002_route_map.html  
-│   └── EUR_003_route_map.html
-├── timetables/
-│   ├── all_timetables.xlsx       
-├── pricing/
-│   ├── european_pricing_analysis.xlsx
-└── reports/
-    └── european_route_analysis.xlsx
+│   ├── EUR_002_route_map.html
+│   └── ...
+├── timetables/     # Excel file with all route timetables (one sheet per route)
+│   └── all_timetables.xlsx
+├── reports/        # Comprehensive analysis report (Excel)
+│   └── european_route_analysis.xlsx
+├── pricing/        # Pricing analysis (Excel)
+│   └── european_pricing_analysis.xlsx
+```
+
+- **maps/**: Contains interactive HTML maps for each generated route.
+- **timetables/**: Contains a single Excel file with all route timetables, each on a separate sheet.
+- **reports/**: Contains a summary Excel report of all routes and cities analyzed.
+- **pricing/**: Contains an Excel file with pricing analysis for each route.
 
 ## Notes
 - The `outputs/` directory is not included in the repository and is generated locally when you run the script.
 - If you want to share your results, you can manually upload the `outputs/` folder.
+
