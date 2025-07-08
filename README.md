@@ -38,6 +38,18 @@ EUROPEAN ROUTE AUTOMATION SYSTEM/
 ├── .gitignore
 ```
 
+## Outputs
+├── maps/
+│   ├── EUR_001_route_map.html
+│   ├── EUR_002_route_map.html  
+│   └── EUR_003_route_map.html
+├── timetables/
+│   ├── all_timetables.xlsx       
+├── pricing/
+│   ├── european_pricing_analysis.xlsx
+└── reports/
+    └── european_route_analysis.xlsx
+
 ## Notes
 - The `outputs/` directory is not included in the repository and is generated locally when you run the script.
 - If you want to share your results, you can manually upload the `outputs/` folder.
