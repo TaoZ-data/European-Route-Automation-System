@@ -47,6 +47,3 @@ EUROPEAN ROUTE AUTOMATION SYSTEM/
 ## Notes
 - The first time you run the notebook, it may take a few minutes to fetch city data and generate outputs.
 - If you want to share your results, you can upload the `outputs/` folder as well.
-
-## License
-This project is for educational purposes. 
