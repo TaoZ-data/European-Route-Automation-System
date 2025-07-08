@@ -21,29 +21,23 @@ This project automatically discovers major cities in selected European countries
    ```
 
 ## Usage
-1. Open the Jupyter notebook `EUROPEAN ROUTE AUTOMATION SYSTEM.ipynb`.
-2. Run all cells from top to bottom.
-3. You can customize the countries and number of routes by changing the parameters in the last cell, for example:
-   ```python
-   results = run_route_automation(['France', 'Germany'], 5)
-   automation = CompleteDynamicAutomation()
-   automation.generate_all_timetables(results['routes_data'])
+1. Run the main Python script:
    ```
-4. All outputs (maps, timetables, reports) will be saved in the `outputs/` directory.
+   python "EUROPEAN ROUTE AUTOMATION SYSTEM.py"
+   ```
+2. You can customize the countries and number of routes by editing the parameters in the script (see the `if __name__ == "__main__":` section).
+
+3. When you run the script, all outputs (maps, timetables, reports) will be generated locally in an `outputs/` directory .
 
 ## Project Structure
 ```
 EUROPEAN ROUTE AUTOMATION SYSTEM/
-├── EUROPEAN ROUTE AUTOMATION SYSTEM.ipynb
+├── EUROPEAN ROUTE AUTOMATION SYSTEM.py
 ├── requirements.txt
 ├── README.md
-├── outputs/
-│   ├── maps/
-│   ├── timetables/
-│   ├── pricing/
-│   └── reports/
+├── .gitignore
 ```
 
 ## Notes
-- The first time you run the notebook, it may take a few minutes to fetch city data and generate outputs.
-- If you want to share your results, you can upload the `outputs/` folder as well.
+- The `outputs/` directory is not included in the repository and is generated locally when you run the script.
+- If you want to share your results, you can manually upload the `outputs/` folder.
